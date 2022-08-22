@@ -1,0 +1,53 @@
+@charset "UTF-8";
+
+h1 {
+background-color: lightgrey;
+height: 100px;
+width: 900px;
+/*
+border-width: 5px;
+border-style: solid;
+border-color: green;
+É possivel simplificar toda essa linha como segue abaixo  */
+
+border: 5px solid green;
+text-align: center; 
+
+/*padding-top: 10px; Sempre que colocar um padding começar de cima em sentido horário
+padding-right: 10px;
+padding-bottom: 10px;
+padding-left: 10px;*/
+
+padding: 10px 10px 10px 10px;
+
+/*margin-top: 2px;
+margin-right: 2px;
+margin-bottom: 2px;
+margin-left: 2px;*/
+
+margin: 2px auto 2px auto;
+
+/*outline-width: 5px;
+outline-style: dashed;
+outline-color: blue;*/
+
+outline: 5px dashed blue;
+}
+
+
+/* Lembrando que o mesmo pode ser feito abaixo, podendo reduzir as linhas e colocando o border, padding e margin em uma unica linha com todos os comandos */
+a {
+border-width: 2px;
+border-style: solid;
+border-color: red;
+
+padding-top: 2px;
+padding-right: 2px;
+padding-bottom: 2px;
+padding-left: 2px;
+
+margin-top: 2px;
+margin-right: 2px;
+margin-bottom: 2px;
+margin-left: 2px;
+}

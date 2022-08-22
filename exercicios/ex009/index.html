@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>Listas</title>
+</head>
+<body>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="1"> <!--É possível colocar vários tipos de lista e estilos, númericos, albatéticos, até a ordem de começo (ordem apenas numerica para o start, logo 2 = letra b)-->
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Carnes</li>
+        <li>Macarrão</li>
+        <li>Oléo de soja</li>
+        <li>Tempero</li>
+        <li>Verdura</li>
+        <li>Queijo</li>
+    </ol><!--Para criar uma lista ordenada, basta criar a tag ol, e dentro dela criar uma tag li, dessa forma caso você tenha que alterar algum item, cada um sera visto como item
+    mas sua ordem continuará ordenada-->
+       
+    <h2>Listas não Ordenadas</h2>
+    <ul type="square">
+        <li>Arroz</li>
+        <li>Feijão</li>
+        <li>Carnes</li>
+        <li>Macarrão</li>
+        <li>Oléo de soja</li>
+        <li>Tempero</li>
+        <li>Verdura</li>
+        <li>Queijo</li>
+    </ul><!--Para criar uma lista não ordenada, basta criar a tag ul, e dentro dela criar uma tag li, dessa forma caso você tenha que alterar algum item, cada um sera visto como item
+        mas você continuará sem ordem-->
+
+    <h2>Meus jogos favoritos</h2>
+    <ol>
+            <li>Super Nitendo</li>
+            <ul type="square">   <!--Lembrando que podemos escolher como apresentar nossa lista não ordenada, se com quadrado, bolinha ou muito mais-->
+                <li>Top Gear</li>
+                <ul type="circle">
+                    <li>Top Gear 1</li>
+                    <li>Top Gear 3000</li>
+                </ul>
+                <li>Mortal Kombat</li>
+            </ul>
+            <li>PC</li>
+            <ul type="square">
+                <li>Fortnite</li>
+                <li>Fortnite</li>
+                <li>Fortnite</li>
+            </ul>
+            <li>PlayStation</li>
+            <ul type="square">
+                <li>Gran Turismo</li>
+                <ul type="circle">
+                    <li>Gran Turismo 2</li>
+                    <li>Gran Turismo 4 </li>
+                </ul>
+                <li>Resident Evil</li>
+                <ul type="circle">
+                    <li>Resident Evil 4</li>
+
+                </ul>
+            </ul>
+        </ol>
+
+   <h2>Minhas linguagens favoritas</h2>
+    <ol>
+        <li>Antigas</li>
+        <ol type="a">
+            <li>Clipper</li>
+            <li>Visual Basic</li>
+            <li>Fortran</li>
+            <li>Delphi</li>
+        </ol>
+        <li>Novas</li>
+        <ol type="a" start="5"> <!--(ordem apenas numerica para o start, logo 2 = letra b), nesse exemplo o 5 corresponde a letra E-->
+            <li>PHP</li>
+            <li>Python</li>
+            <li>JavaScript</li>
+            <li>Kotlin</li>
+        </ol>
+    </ol>
+
+    <h2>Lista de definição</h2>
+    <dl>
+        <dt>Termo</dt> <!--Termo que vai ser utilizado-->
+        <dd>Descrição</dd> <!--Descrição do termo acima-->
+        <dt>HTML</dt>
+        <dd>Linguagem de marcação para a criação do conteúdo de um site.</dd>
+        <dt>CSS</dt>
+        <dd>Linguagem de marcação para a criação do design de um site.</dd>
+        <dt>JavaScript</dt>
+        <dd>Linguagem de programação para a criação de interatividade de um site.</dd>
+    </dl>
+</body>
