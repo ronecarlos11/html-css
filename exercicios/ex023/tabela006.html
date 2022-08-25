@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>Tabelas Responsivas</title>
+   <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+        border-collapse: collapse;
+        
+    }
+
+    caption {
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 20px;
+    }
+
+    th, td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+   
+    tr:nth-child(even) {
+        background-color: rgba(128, 128, 128, 0.308);
+    }
+
+    div#container {
+        overflow-x: auto; /* Envelopar toda a tabela em uma div e configurar apenas a tabela para que somente ela role horizontal*/
+    }    
+   </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequenas</h1>
+    <!-- HIERARQUIA DE TABELAS (simples)
+                  TABLE = tabela
+                    TABLE ROW = linha de tabela
+                    TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dados de tabela-->
+
+     <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor quod vero corrupti odit, pariatur nesciunt totam animi quam quibusdam porro ducimus explicabo, error praesentium dolorum atque ipsa itaque nulla eum excepturi ab laborum officia. Suscipit quae praesentium perspiciatis ratione deserunt tempore atque nulla optio, sunt numquam incidunt explicabo quia provident similique laudantium qui dolore, officia aperiam mollitia fuga? Veritatis reiciendis vitae suscipit expedita iusto fugit laudantium unde temporibus ipsam, deleniti accusantium provident. Beatae explicabo quos quam, mollitia sit necessitatibus fuga, iure enim eligendi adipisci iusto! Laboriosam accusantium reprehenderit quidem consectetur, fugiat non possimus illo rem quis cum aliquam fuga eos adipisci iste commodi accusamus porro, harum doloribus enim aliquid odit nemo vel voluptatum recusandae. Dignissimos accusantium minus tenetur, repellat exercitationem qui recusandae animi! Voluptatum beatae animi placeat quod rem odit totam in qui, optio ipsam deserunt expedita consectetur assumenda unde nesciunt, voluptatem ut? Maiores id voluptatibus rem? Quaerat aliquam sunt praesentium dolorem repellendus, natus, delectus magnam similique at fugit sint! Tenetur magnam alias necessitatibus aspernatur eum quos hic iste nemo inventore quasi accusantium, suscipit pariatur autem eveniet, laudantium maiores a doloribus quaerat id tempore qui iure. Magnam quae recusandae ea corporis praesentium? Omnis doloribus eos dolore. Sequi impedit, dicta sint harum, accusamus commodi hic voluptatibus accusantium optio facilis quia delectus suscipit assumenda ratione quasi nisi molestias ea laudantium eaque ex natus, amet error officia. Iste magnam totam error mollitia, et quas rerum numquam commodi, nam distinctio itaque laboriosam accusantium ducimus in rem fuga laudantium debitis assumenda! Reiciendis, nisi! Iste, nisi. Reprehenderit, eligendi harum? Voluptatum molestiae ipsum sequi nobis atque eveniet esse corporis laborum. Omnis numquam, ipsum adipisci deserunt, modi, saepe earum ipsa tempore deleniti molestias laboriosam a harum. Vel commodi eveniet odio accusantium accusamus quam cumque veritatis, voluptatum unde ipsam, eaque tenetur? Doloremque dolor enim illo corporis laborum quo praesentium sed ipsam excepturi commodi nesciunt tempore, sequi saepe temporibus atque quae. Cum similique, harum iure, excepturi blanditiis omnis laudantium pariatur totam, at qui ullam officiis magnam temporibus unde. Cumque repudiandae quis quibusdam nulla, dignissimos corporis molestias fuga inventore velit dolor expedita temporibus delectus nisi nemo accusamus fugiat quod quasi commodi minus distinctio. Eum error beatae quia libero nisi omnis quo veritatis. Optio consequatur hic suscipit, architecto eaque dolorem odit. Aperiam id dicta consequuntur vitae facere! Quae aliquid ab deserunt obcaecati omnis beatae, iusto praesentium rem sed, ullam natus consequuntur error. Inventore cum molestiae ullam eaque molestias adipisci nam minus eius.
+     </p>               
+    <div id="container">
+        <table>
+        
+            <caption>Cadastro</caption>
+            <thead>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thead>
+           <tbody>
+                <tr>
+                    <td>Televisão</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>03</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Home Theater</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>03</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Redmi Note</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>03</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Ipad</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>03</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>PS5</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>03</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>GTX3090</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>03</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <td>Ar condicionado</td>
+                    <td>01</td>
+                    <td>03</td>
+                    <td>02</td>
+                    <td>07</td>
+                    <td>05</td>
+                    <td>09</td>
+                    <td>11</td>
+                    <td>03</td>
+                    <td>12</td>
+                    <td>05</td>
+                    <td>04</td>
+                    <td>30</td>
+                </tr>
+           </tbody>
+        
+        </table>
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>Tabelas</title>
+   <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 300px;
+        text-align: center;
+    }
+
+    td{
+        border: 1px solid black;
+        padding: 10px;
+    }
+   </style>
+</head>
+<body>
+    <h1>Mesclagem de Células</h1>
+    <!-- HIERARQUIA DE TABELAS (simples)
+                  TABLE = tabela
+                    TABLE ROW = linha de tabela
+                    TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dados de tabela-->
+    <table>  
+     <tr>
+        <td>A</td>
+        <td colspan="2">B</td> <!--Colspan -> Expansão de coluna-->
+
+     </tr>
+
+     <tr>
+        <td>D</td>
+        <td>E</td>
+        <td rowspan="3">F</td> <!--rowspan -> Expansão de linha-->
+     </tr>
+
+     <tr>
+        
+        <td>H</td>
+        <td>I</td>
+     </tr>
+
+     <tr>
+        
+        <td>K</td>
+        <td>L</td>
+     </tr>
+
+    </table>
+</body>
+</html>

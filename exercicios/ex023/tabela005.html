@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="logo.ico" type="image/x-icon">
+    <title>Tabelas</title>
+   <style>
+    body{
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    table{
+        border-collapse: collapse;
+        width: 500px;
+        text-align: center;
+    }
+
+    caption {
+        font-size: 1.3em;
+        font-weight: bolder;
+        padding: 8px;
+    }
+
+    th, td{
+        border: 1px solid black;
+        padding: 8px;
+        text-align: center;
+    }
+   
+   .destaque {
+    background-color: chartreuse;
+   }
+
+   col.cnome {
+    background-color: chartreuse;
+   }
+
+   col.cgrupo {
+    background-color: lightgreen;
+   }
+
+   </style>
+</head>
+<body>
+    <h1>Exercício de Tabela</h1>
+    <!-- HIERARQUIA DE TABELAS (simples)
+                  TABLE = tabela
+                    TABLE ROW = linha de tabela
+                    TABLE HEADER = cabeçalho de tabela
+                    TABLE DATA = dados de tabela-->
+    <table> 
+        <colgroup>
+            <col class="cnome">
+            <col class="cgrupo" span="2"> <!--Dessa forma conseguimos criar um grupo para Sexo e Idade e o span faz ele expandir para 2 colunas quando for aplicar um style ou podendo expandir mais-->
+            <col class="cprof">
+        </colgroup>
+
+        <caption>Cadastro</caption>
+        <tr>
+            <th scope="col">Nome</th>
+            <th scope="col">Sexo</th>
+            <th scope="col">Idade</th>
+            <th scope="col">Profissão</th>
+        </tr>
+
+        <tr>
+            <td class="destaque">Ana Maria</td>
+            <td>F</td>
+            <td>25</td>
+            <td>Jornalista</td>
+        </tr>
+
+        <tr>
+            <td>Joao Pedro</td>
+            <td>M</td>
+            <td>22</td>
+            <td>Coach</td>
+        </tr>
+
+        
+        <tr>
+            <td>Julia</td>
+            <td>F</td>
+            <td>20</td>
+            <td>Advogada</td>
+        </tr>
+
+        <tr>
+            <td>Marcos Aurelio</td>
+            <td>M</td>
+            <td>19</td>
+            <td>Atendente</td>
+        </tr>
+
+        
+        <tr>
+            <td>Rita Gonçalves</td>
+            <td>F</td>
+            <td>30</td>
+            <td>Domestica</td>
+        </tr>
+
+        <tr>
+            <td>Igor Augusto</td>
+            <td>M</td>
+            <td>27</td>
+            <td>Programador</td>
+        </tr>
+    
+    </table>
+</body>
+</html>
